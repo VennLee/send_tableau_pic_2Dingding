@@ -20,8 +20,8 @@ cd /opt/project/tst/liwenqiang
 echo "Running Start:"`date -d 0days "+%Y-%m-%d %H:%M:%S"`
 
 filename='test'
-tableau_url="http://10.1.5.94/t/portal/views/GMV/GMV_1?:embed=y&:showShareOptions=true&:display_count=no&:showVizHome=no"
-dingding_url='https://oapi.dingtalk.com/robot/send?access_token=b4b76b66902b41246a8de575e4b2424871e3c5bfac37cf2994ac71a587912692'
+tableau_url="http://10.10.5.94/t/portal/views/test3253/GMV_1?:embed=y&:showShareOptions=true&:display_count=no&:showVizHome=no"
+dingding_url='https://oapi.dingtalk.com/robot/send?access_token=b4b7fddfasdf442hhfa2asdf23246a8de432323421a587912692'
 title='中文标题'
 text='中文文本'
 

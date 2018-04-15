@@ -172,7 +172,7 @@ class PicUp():
         return img_url
 
 def send_msg(title,text):
-    dd_url="https://oapi.dingtalk.com/robot/send?access_token=b4b76b66902b41246a8de575e4b2424871e3c5bfac37cf2994ac71a587912692"
+    dd_url="https://oapi.dingtalk.com/robot/send?access_token=b4b76b6690fadf24dfadggg232b41244871e3c5bfacdd37cf2994ac71a587912692"
     title = title.decode("utf-8")
     text =  text.decode("utf-8")
 
@@ -226,14 +226,14 @@ if __name__=='__main__':
     # #这里配置 贴图网的信息
     tietu_config={'up_url':'http://up.imgapi.com/', #api地址
                   #token
-                  'token':'b37e60452a39ae45c5ef1f3c3c8da2d8d4598a40:p24p7JWVibRYZQywCqf4XOn4WwM=:eyJkZWFkbGluZSI6MTUyMzQyODkzMiwiYWN0aW9uIjoiZ2V0IiwidWlkIjoiNjQwNzIxIiwiYWlkIjoiMTQyOTU2MCIsImZyb20iOiJmaWxlIn0=',
-                  'aid':1429560 #相册ID
+                  'token':'b37e60452a39ae45c5ef1f3c3c8da2d8d4598a40:pfas44edibRYZQywCqf4XOn4WwM=:eyJkZWdfa44Fk44fdMTUyMzQyODdgiYWN0aWd4iZ2V0IiwdfaidEEdIjoiNjQdf2IxIiwiYddfaTQyOTU2MCIsImZyb20iOiJmaWxlIn0=',
+                  'aid':75823289 #相册ID
                   }
     #这里配置 七牛云的信息
-    qiniu_config={'access_key':'VxZQdrx2KwWrFhp4EMzQ5JrbiGrCgn5T0RPvr9zv',
-                  'secret_key':'UFPjVJ5EGz071i3-qnBmeLMTBN5EcIpH1dnLafhn',
-                  'bucket_name':'snoopy',# 填入你的七牛空间名称
-                  'bucket_url':'http://p70j3thuj.bkt.clouddn.com' # 填入你的域名地址，主要是为了记录图片上传后的地址
+    qiniu_config={'access_key':'VxZQdrx44dsa2KwWrfadFhp4EMdfa4d212zQ5JoprbiGrCgn5T0RPvr9zv',
+                  'secret_key':'UFPjJ5EGz071i3234f23BmeLMTddBN5EcIKKEbspH1dnLafhn',
+                  'bucket_name':'fspy',# 填入你的七牛空间名称
+                  'bucket_url':'http://ulDkjtll682.bkt.clouddn.com' # 填入你的域名地址，主要是为了记录图片上传后的地址
                    }
     pu = PicUp(tietu_config,qiniu_config) # 初始化，需要用哪个服务则初始化好这个，并选用对应的函数即可
     try:
@@ -251,8 +251,8 @@ if __name__=='__main__':
         exit()
     # # # # 钉钉机器人发送到钉钉群
     dingding_url = sys.argv[3]
-    # dingding_url = "https://oapi.dingtalk.com/robot/send?access_token=b4b76b66902b41246a8de575e4b2424871e3c5bfac37cf2994ac71a587912692"  # 测试群
-    # #dingding_url='https://oapi.dingtalk.com/robot/send?access_token=ceb86f10b8069e8131b06d3541e5fc5df07d76b25b9846bd52f34fcf329ff806'#正式群
+    # dingding_url = "https://oapi.dingtalk.com/robot/send?access_token=b4b76fasffa4sa33b6d690275e4b2424871e3c5bf4dac37cf2994ac71a587912692"  # 测试群
+    # #dingding_url='https://oapi.dingtalk.com/robot/send?access_token=ceb8fdaf10b8069e81341e5fcdfa3bdsf5fhdf07d76b25b9846bd52f34fcf329ff806'#正式群
     dd = ToDingDing(dd_url=dingding_url)
     text = sys.argv[5]
     dd.send_mkd(title=title, text=text, pic_url=pic_link_url)
